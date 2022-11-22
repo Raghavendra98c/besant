@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>oops</title>
+</head>
+<body>
+<h3>Javscript oops</h3>
+    <script>
+
+
+//Oops ---> object oriented programming system 
+
+//class
+//objects 
+//methods 
+//inheritance
+//polymorphism
+//encapsulation
+//data abstraction
+
+
+//constructor()--> is function it is used to define instance objects
+
+
+// function myFunc(a,b,c,d){
+//     return{
+//         x:a,
+//         y:b,
+//         z:c,
+//         m:d,
+//         myName:function(){
+//             console.log(`series: ${this.x} ${this.y} ${this.z} ${this.m}`)
+//         }
+//     }
+// }
+// let obj=myFunc(1,2,3,4)
+// obj.myName()
+// let obj1=myFunc(5,6,7,8)
+// obj1.myName()
+
+
+
+// //constructor
+
+// // function myName(fname,city){
+
+// //     this.x=fname
+// //     this.y=city
+// //     this.myFunc=function(state){
+// //         console.log(`my name is ${this.x} i am from ${this.y} , ${state}`)
+// //     }
+
+// // }
+
+// // let a=new myName("Raghav","banglore")
+// // a.myFunc("Karnataka")
+
+
+
+// //class --> group of functoions
+
+// //syntyax
+// class Main{
+//     fees=200000 // class variables 
+//     constructor(name,city,rollno,year){
+//         // instance variables
+//         this.a=name
+//         this.b=city
+//         this.c=rollno
+//         this.d=year
+//     }
+//     //methods
+//     myName=function(){
+//         document.write(`Student details:<br/>`)
+//         document.write(`Name:${this.a}<br/>City:${this.b}<br/>RollNo:${this.c} <br/>Year:${this.d}`)
+
+//     }
+//     //methods
+//     helo(a,b,c,d){
+//        document.write(`series:${a} ${b} ${c} ${d}`)
+//     }
+
+    
+// }
+
+// let k=new Main("Vijay","Chenai",2534,2000)
+// k.myName()
+// let k1=new Main("Vijay","Chenai",2534,2000)
+// k1.myName()
+
+
+// let c=new Main()
+// c.helo(1,2,3,4)
+
+
+//inheritance -->one class is derived from the another class 
+
+//super()--> it is used to  call the parent parameters 
+
+
+
+class Student{
+    constructor(){
+        document.write("Function 1 <br/>")
+    }
+}
+class Student1 extends Student{
+    constructor(){
+        super()
+        document.write("Function 2 <br/>")
+    }
+}
+
+class Main extends Student1{
+    fees=200000 // class variables 
+    constructor(name,city,rollno,year,a){
+        super(a)
+        // instance variables
+        this.a=name
+        this.b=city
+        this.c=rollno
+        this.d=year
+    }
+    //methods
+    myName=function(){
+        document.write(`Student details:<br/>`)
+        document.write(`Name:${this.a}<br/>City:${this.b}<br/>RollNo:${this.c} <br/>Year:${this.d}`)
+
+    }
+    //methods
+    helo(a,b,c,d){
+       document.write(`series:${a} ${b} ${c} ${d}`)
+    }
+
+    
+}
+
+let k=new Main("Vijay","Chenai",2534,2000,Student1)
+k.myName()
+// let k1=new Main("Vijay","Chenai",2534,2000,Student1)
+// k1.myName()
+
+
+// let c=new Main()
+// c.helo(1,2,3,4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
